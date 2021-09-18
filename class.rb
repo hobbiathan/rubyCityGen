@@ -1,3 +1,5 @@
+require './methods'
+
 class City
 
   attr_accessor :name, :population
@@ -8,8 +10,8 @@ class City
   end
 
   def city_info
-    puts self.population
     puts self.name
+    puts self.population
   end
 
   def get_pop
@@ -18,10 +20,6 @@ class City
 
   def get_name
     self.name
-  end
-
-  def city_update(i)
-    @name = i
   end
 
 end
