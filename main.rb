@@ -2,7 +2,9 @@
 require './class'
 require './methods'
 $running = 1
+
 # The multi-line comment below was testing for object creation and insertion into an array
+
 =begin
 
 # Creating an array empty array
@@ -15,7 +17,7 @@ end
 x = 0
 until x >= cities.size() # Execute this code until conditional is met
   cities[x].city_info # Print off info of each element in our array
-  print "\n" #
+  print "\n"
   x += 1
 end
 
@@ -24,7 +26,7 @@ end
 # Begin control flow
 while $running == 1
   puts "What would you like to do?"
-  puts "Generate Cities (G), List Cities (L)"
+  puts "Generate Cities (G), List Cities (L), Exit (E)"
   input = gets.chomp
 
   if input == 'G'
@@ -33,6 +35,9 @@ while $running == 1
   elsif input == 'L'
     list_cities()
     $running = 1
+  elsif input == 'E'
+    puts "Program terminated."
+    $running = 0
   else
     puts "Invalid input, program terminated."
     $running = 0
