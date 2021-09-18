@@ -20,8 +20,8 @@ end
 
 def list_cities()
   x = 0
-  while x < $cities.size()
-    $cities[x].city_info
+  while x < $cities.size() # Loop through all elements in our global array
+    $cities[x].city_info # Print out info of each element 
     print "\n"
     x += 1
   end
