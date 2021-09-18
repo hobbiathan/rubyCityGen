@@ -8,7 +8,7 @@ class City
   end
 
   def city_info
-    puts "City " + self.name.to_s # Print name as 'City X' instead of just 'X'
+    puts "City " + self.name.to_s # Print name as 'City X' instead of just 'X' 
     puts self.population
   end
 
