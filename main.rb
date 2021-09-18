@@ -25,21 +25,20 @@ end
 
 # Begin control flow
 while $running == 1
-  puts "What would you like to do?"
+  puts "\nWhat would you like to do?"
   puts "Generate Cities (G), List Cities (L), Exit (E)"
+  print "> "
   input = gets.chomp
 
   if input == 'G'
     generate_cities()
-    $running = 1
   elsif input == 'L'
     list_cities()
-    $running = 1
   elsif input == 'E'
-    puts "Program terminated."
+    puts "\nProgram terminated."
     $running = 0
   else
-    puts "Invalid input, program terminated."
+    puts "\nInvalid input, program terminated."
     $running = 0
   end
 end
